@@ -103,7 +103,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         
         let winCases = [
-            ("Rock", "Scissors"), ("Rock", "Lizard"),
+            ("Rock", "Scissors"), ("Rock", "Paper"), ("Rock", "Lizard"),
             ("Paper", "Rock"), ("Paper", "Spock"),
             ("Scissors", "Paper"), ("Scissors", "Lizard"),
             ("Lizard", "Paper"), ("Lizard", "Spock"),
@@ -117,6 +117,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             playerScore += 1
         } else {
             resultLabel.text = "You Lost!"
+            computerScore += 1
         }
         
         playerScoreLabel.text = "Player Score: \(playerScore)"
